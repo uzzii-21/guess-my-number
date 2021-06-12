@@ -13,18 +13,61 @@ body{
     color: var(--text-color);
     max-width: 780px;
     margin: auto;
+    font-family: 'Bangers', cursive;
 }
 header > div {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0;
+    align-items: center;
+    margin-top: 2rem;
 }
 .title{
     text-align: center;
     font-size: 3rem;
+    margin: 1rem 0;
+    font-family: 'Monoton', cursive;
+    font-weight: 100;
 }
 .number{
-    display: inline-block;
+    height: 8rem;
+    width: 8rem;
     text-align: center;
+    padding-top: 1.3rem;
+    display: inline-block;
+    color: var(--bg-default);
     font-size: 5rem;
+    background: var(--text-color);
+}
+.score{
+    font-size: 1.8rem;
+}
+main{
+    text-align: center;
+    margin-top: 2rem;
+}
+section > input{
+    margin:0.5rem;
+    width: 4.4rem;
+    padding: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border: 3px solid var(--text-color);
+    color: var(--text-color);
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Bangers', cursive;
+}
+section > button{
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: var(--bg-default);
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+}
+section > p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
 }
