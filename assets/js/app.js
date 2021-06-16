@@ -23,6 +23,7 @@ document.querySelector('.check').addEventListener('click', () => {
         }
         else{
             document.querySelector('.msg').textContent = "You lost the game 💥";
+            document.querySelector('.score').textContent = 0;
         }
     }
     else if (guess < secretNumber) {
@@ -33,6 +34,7 @@ document.querySelector('.check').addEventListener('click', () => {
         }
         else{
             document.querySelector('.msg').textContent = "You lost the game 💥";
+            document.querySelector('.score').textContent = 0;
         }
     }
 })
