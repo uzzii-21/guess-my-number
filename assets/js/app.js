@@ -1,7 +1,6 @@
 "use strict";
 
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
-document.querySelector(".number").textContent = secretNumber;
 
 let score = 20;
 
@@ -16,6 +15,8 @@ document.querySelector('.check').addEventListener('click', () => {
     // when player is win
     else if (guess === secretNumber) {
         document.querySelector('.msg').textContent = "Correct Number! 👌";
+        document.querySelector('body').style = "background : #4aa96c";
+        document.querySelector(".number").textContent = secretNumber;
     }
     // when guess is to high
     else if (guess > secretNumber) {
