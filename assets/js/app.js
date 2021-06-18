@@ -41,6 +41,7 @@ document.querySelector('.check').addEventListener('click', () => {
         document.querySelector('body').style = "background : #4aa96c";
         document.querySelector(".number").textContent = secretNumber;
         searchInput(index, "#66DE93");
+        document.querySelector('.check').disabled = true;
         document.querySelector('[name="theme-color"]').setAttribute('content',  '#66DE93');
         if(score > highScore){
             highScore = score;
@@ -79,7 +80,8 @@ document.querySelector('.check').addEventListener('click', () => {
 
 const reset =  () => {
     document.querySelector('.check').disabled = false;
-    let inputs = document.querySelectorAll('input')
+    let inputs = document.querySelectorAll('input');
+    document.querySelector('[name="theme-color"]').setAttribute('content',  '#343a40');
     inputs.forEach((input) => {
         input.style = `border: 4px solid #e1e8eb`;
         input.value = '';
