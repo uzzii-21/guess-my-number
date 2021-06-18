@@ -23,11 +23,11 @@ document.querySelector('.check').addEventListener('click', () => {
         if (score > 1) {
             document.querySelector('.msg').textContent = "Too High 🤷‍♀️";
             score--;
-            document.querySelector('.score').textContent = score;
+            document.querySelector('.score > span').textContent = score;
         }
         else{
             document.querySelector('.msg').textContent = "You lost the game 💥";
-            document.querySelector('.score').textContent = 0;
+            document.querySelector('.score > span').textContent = 0;
         }
     }
     // when guess is to low
@@ -35,11 +35,17 @@ document.querySelector('.check').addEventListener('click', () => {
         if (score > 1) {
             document.querySelector('.msg').textContent = "Too Low 🤔";
             score--;
-            document.querySelector('.score').textContent = score;
+            document.querySelector('.score > span').textContent = score;
         }
         else{
             document.querySelector('.msg').textContent = "You lost the game 💥";
-            document.querySelector('.score').textContent = 0;
+            document.querySelector('.score > span').textContent = 0;
         }
+    }
+})
+
+document.querySelector('.again').addEventListener('click', () => {
+    if (document.querySelector('.msg').textContent.includes("You lost the game")) {
+        console.log("yes");
     }
 })

@@ -11,25 +11,27 @@
 body{
     background: var(--bg-default);
     color: var(--text-color);
-    max-width: 780px;
-    margin: auto;
     font-family: 'Bangers', cursive;
 }
 header{
     margin: 1rem;
-}
-header > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-}
+} 
 .title{
     text-align: center;
     font-size: 3rem;
-    margin: 1rem 0;
     font-family: 'Monoton', cursive;
     font-weight: 100;
+}
+main{
+    max-width: 780px;
+    text-align: center;
+    margin: 2rem auto;
+}
+main > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1rem;
 }
 .number{
     height: 8rem;
@@ -44,9 +46,8 @@ header > div {
 .scores{
     font-size: 1.8rem;
 }
-main{
-    text-align: center;
-    margin-top: 2rem;
+section{
+    margin: 2rem 1rem;
 }
 section > input{
     margin:0.5rem;
@@ -71,7 +72,7 @@ section > input::-webkit-inner-spin-button {
 section > input[type=number] {
   -moz-appearance: textfield;
 }
-section > button{
+section > .btn{
     padding: 1rem;
     font-size: 1.3rem;
     margin-top: 1rem;
@@ -79,9 +80,19 @@ section > button{
     color: var(--bg-default);
     font-family: 'Bangers', cursive;
     letter-spacing: 5px;
+    cursor: pointer;
 }
 section > p {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+footer{
+    background:var(--text-color);
+    color: var(--bg-default);
+    text-align: center;
+}
+footer > P {
+    padding: 2rem;
     letter-spacing: 5px;
 }
