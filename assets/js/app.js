@@ -46,6 +46,14 @@ document.querySelector('.check').addEventListener('click', () => {
 
 document.querySelector('.again').addEventListener('click', () => {
     if (document.querySelector('.msg').textContent.includes("You lost the game")) {
-        console.log("yes");
+        score = 20;
+        document.querySelector('.score > span').textContent = score;
+        document.querySelector('.msg').textContent = "Guess the number between 1 to 20 🐱‍👤"
+    }
+    else{
+        score = 20;
+        document.querySelector('.score > span').textContent = score;
+        document.querySelector('body').style = "background : #343a40";
+        document.querySelector('.msg').textContent = "Guess the number between 1 to 20 🐱‍👤"
     }
 })
