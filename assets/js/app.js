@@ -41,6 +41,7 @@ document.querySelector('.check').addEventListener('click', () => {
         document.querySelector('body').style = "background : #4aa96c";
         document.querySelector(".number").textContent = secretNumber;
         searchInput(index, "#66DE93");
+        document.querySelector('[name="theme-color"]').setAttribute('content',  '#66DE93');
         if(score > highScore){
             highScore = score;
             document.querySelector('.highScore > span').textContent = highScore
