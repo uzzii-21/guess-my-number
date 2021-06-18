@@ -1,7 +1,6 @@
 "use strict";
 
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
-
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 
 document.querySelector('.check').addEventListener('click', () => {
@@ -45,15 +44,18 @@ document.querySelector('.check').addEventListener('click', () => {
 })
 
 document.querySelector('.again').addEventListener('click', () => {
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    score = 20;
     if (document.querySelector('.msg').textContent.includes("You lost the game")) {
-        score = 20;
         document.querySelector('.score > span').textContent = score;
-        document.querySelector('.msg').textContent = "Guess the number between 1 to 20 🐱‍👤"
+        document.querySelector('.msg').textContent = "Guess the number between 1 to 20 🐱‍👤";
+        document.querySelector(".guess").value = '';
     }
     else{
-        score = 20;
         document.querySelector('.score > span').textContent = score;
         document.querySelector('body').style = "background : #343a40";
-        document.querySelector('.msg').textContent = "Guess the number between 1 to 20 🐱‍👤"
+        document.querySelector('.msg').textContent = "Guess the number between 1 to 20 🐱‍👤";
+        document.querySelector(".number").textContent = "?";
+        document.querySelector(".guess").value = '';
     }
 })
