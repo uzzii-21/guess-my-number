@@ -56,6 +56,7 @@ document.querySelector('.check').addEventListener('click', () => {
         }
         else{
             document.querySelector('.msg').textContent = "You lost the game 💥";
+            document.querySelector('.check').disabled = true;
             document.querySelector('.score > span').textContent = 0;
         }
     }
@@ -69,12 +70,14 @@ document.querySelector('.check').addEventListener('click', () => {
         }
         else{
             document.querySelector('.msg').textContent = "You lost the game 💥";
+            document.querySelector('.check').disabled = true;
             document.querySelector('.score > span').textContent = 0;
         }
     }
 })
 
 const reset =  () => {
+    document.querySelector('.check').disabled = false;
     let inputs = document.querySelectorAll('input')
     inputs.forEach((input) => {
         input.style = `border: 4px solid #e1e8eb`;
