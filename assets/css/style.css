@@ -1,65 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --bg-default: #343a40;
-    --text-color:#e1e8eb;
-    --bg-win: #4aa96c;
+:root {
+  --bg-default: #343a40;
+  --text-color: #e1e8eb;
+  --bg-win: #4aa96c;
 }
-body{
-    background: var(--bg-default);
-    color: var(--text-color);
-    font-family: 'Bangers', cursive;
+body {
+  background: var(--bg-default);
+  color: var(--text-color);
+  font-family: "Bangers", cursive;
 }
-header{
-    margin: 1rem;
-} 
-.title{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Monoton', cursive;
-    font-weight: 100;
+header {
+  margin: 1rem;
 }
-main{
-    max-width: 780px;
-    text-align: center;
-    margin: 2rem auto;
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Monoton", cursive;
+  font-weight: 100;
+}
+main {
+  max-width: 780px;
+  text-align: center;
+  margin: 2rem auto;
 }
 main > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 1rem;
 }
-.number{
-    height: 8rem;
-    width: 8rem;
-    text-align: center;
-    padding-top: 1.3rem;
-    display: inline-block;
-    color: var(--bg-default);
-    font-size: 5rem;
-    background: var(--text-color);
+.number {
+  height: 8rem;
+  width: 8rem;
+  text-align: center;
+  padding-top: 1.3rem;
+  display: inline-block;
+  color: var(--bg-default);
+  font-size: 5rem;
+  background: var(--text-color);
 }
-.scores{
-    font-size: 1.8rem;
+.scores {
+  font-size: 1.8rem;
 }
-section{
-    margin: 2rem 1rem;
+section {
+  margin: 2rem 1rem;
 }
-section > input{
-    margin:0.5rem;
-    width: 4.4rem;
-    padding: 1rem;
-    font-size: 2rem;
-    background: transparent;
-    border: 3px solid var(--text-color);
-    color: var(--text-color);
-    outline: none;
-    border-radius: 5px;
-    font-family: 'Bangers', cursive;
+section > input {
+  margin: 0.5rem;
+  width: 4.4rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border: 3px solid var(--text-color);
+  color: var(--text-color);
+  outline: none;
+  border-radius: 5px;
+  font-family: "Bangers", cursive;
 }
 /* Chrome, Safari, Edge, Opera */
 section > input::-webkit-outer-spin-button,
@@ -69,30 +69,34 @@ section > input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-section > input[type=number] {
+section > input[type="number"] {
   -moz-appearance: textfield;
 }
-section > .btn{
-    padding: 1rem;
-    font-size: 1.3rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-    color: var(--bg-default);
-    font-family: 'Bangers', cursive;
-    letter-spacing: 5px;
-    cursor: pointer;
+section > .btn {
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: var(--bg-default);
+  font-family: "Bangers", cursive;
+  letter-spacing: 5px;
+  cursor: pointer;
 }
 section > p {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    letter-spacing: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
 }
-footer{
-    background:var(--text-color);
-    color: var(--bg-default);
-    text-align: center;
+footer {
+  background: var(--text-color);
+  color: var(--bg-default);
+  text-align: center;
 }
 footer > P {
-    padding: 2rem;
-    letter-spacing: 5px;
+  padding: 2rem;
+  letter-spacing: 5px;
+}
+a {
+  text-decoration: none;
+  color: var(--bg-default);
 }
